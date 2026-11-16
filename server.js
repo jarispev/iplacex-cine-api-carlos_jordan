@@ -6,7 +6,7 @@ import client from "./src/common/db.js";
 import peliculaRoutes from "./src/pelicula/routes.js";
 import actorRoutes from "./src/actor/routes.js";
 
-const PORTS = 3000||4000;
+const PORTS = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
